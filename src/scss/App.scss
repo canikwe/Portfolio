@@ -8,16 +8,29 @@
   pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
+#home {
+  background: url('../images/evgeny-lazarenko-8HknSpvc1CU-unsplash.jpg');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
+
+#feature-img-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.feature-img {
+  height: 500px;
+  width: 400px;
+}
+
 
 .App-link {
   color: #61dafb;

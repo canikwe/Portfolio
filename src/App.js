@@ -1,16 +1,15 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react'
+import Home from './components/Home'
+import './scss/App.scss'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-        <p>Portfolio coming soon.</p>
-        </header>
+const App = () => {
+  return (
+    <div className="App">
+      <div id="home">
+        <Home />
       </div>
-    );
-  }
+    </div>
+  )
 }
 
-export default App;
+export default App
