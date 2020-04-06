@@ -4,6 +4,7 @@
 
 - App
   - Home
+  - Nav
   - About
   - ProjectsList
     - Project...

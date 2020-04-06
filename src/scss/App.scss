@@ -1,3 +1,5 @@
+@import 'constants';
+
 .App {
   text-align: center;
 }
@@ -11,13 +13,52 @@
 #home {
   background: url('../images/evgeny-lazarenko-8HknSpvc1CU-unsplash.jpg');
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr auto;
+  // flex-direction: column;
+  // align-items: flex-start;
+  justify-items: start;
   font-size: calc(10px + 2vmin);
   color: white;
 
+  div {
+    align-self: center;
+    text-align: left;
+  }
+
+  p {
+    margin: 0;
+    font-style: italic;
+  }
+}
+
+nav {
+  width: 100%;
+  background-color: $neutral;
+  color: $base-dark;
+  text-align: left;
+
+  ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0;
+  }
+
+  li {
+    display: inline-block;
+
+    &::after {
+      padding: 0 10px;
+      content: '|'
+    }
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 }
 
 #feature-img-container {

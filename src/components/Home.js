@@ -2,7 +2,11 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <h1> Honey, I'm Home!</h1>
+    <div>
+      <p>Welcome 🎉 I'm Chine Anikwe</p>
+      <p>and I'm a Full Stack Web Developer</p>
+
+    </div>
   )
 }
 

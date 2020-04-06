@@ -1,5 +1,6 @@
 import React from 'react'
 import Home from './components/Home'
+import NavBar from './components/NavBar'
 import './scss/App.scss'
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <div className="App">
       <div id="home">
         <Home />
+        <NavBar />
       </div>
     </div>
   )
