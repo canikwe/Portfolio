@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './components/Home'
 import NavBar from './components/NavBar'
+import About from './components/About'
 import './scss/App.scss'
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
         <Home />
         <NavBar />
       </div>
+      <About />
     </div>
   )
 }

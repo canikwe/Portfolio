@@ -4,8 +4,10 @@
 
 - App
   - Home
-  - Nav
+  - NavBar
   - About
+    - TechList
+      - Tech
   - ProjectsList
     - Project...
   - BlogPostsList

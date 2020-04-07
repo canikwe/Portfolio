@@ -1,5 +1,9 @@
 @import 'constants';
 
+@mixin full-height {
+  min-height: 100vh;
+}
+
 .App {
   text-align: center;
 }
@@ -11,13 +15,12 @@
 }
 
 #home {
-  background: url('../images/evgeny-lazarenko-8HknSpvc1CU-unsplash.jpg');
-  min-height: 100vh;
+  @include full-height;
+
+  background: url('../images/home/evgeny-lazarenko-8HknSpvc1CU-unsplash.jpg');
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 1fr auto;
-  // flex-direction: column;
-  // align-items: flex-start;
   justify-items: start;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -61,15 +64,39 @@ nav {
   }
 }
 
-#feature-img-container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
+#about {
+  @include full-height;
+  
+  .content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    justify-items: center;
 
-.feature-img {
-  height: 500px;
-  width: 400px;
+    @media only screen and (max-width: 650px) {
+      grid-template-columns: 100%;
+    }
+
+  }
+
+  #profile {
+    max-width: 50%;
+    border-radius: 50%;
+  }
+
+  #tech-list-container {
+    width: 100%;
+    
+    #tech-list {
+      display: grid;
+      gap: 5px;
+      grid-template-columns: repeat(auto-fill, minmax(auto, 75px));
+    }
+
+    .tech {
+      width: 100%;
+    }
+  }
 }
 
 
