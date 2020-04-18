@@ -12,14 +12,16 @@ const ProjectsList = () => {
 
   return (
     <div id='projects-list'>
-      <h1>Projects List</h1>
-      <div className="columns is-desktop is-centered is-multiline is-gapless">
-        {projectList.map(p => (
-          <Project key={p.id} project={p} toggleProjectDetails={toggleProjectDetails}/>
-        ))}
+      <div className='container'>
+        <h1>Projects List</h1>
+        <div className="columns is-desktop is-centered is-multiline is-gapless">
+          {projectList.map(p => (
+            <Project key={p.id} project={p} toggleProjectDetails={toggleProjectDetails}/>
+          ))}
 
+        </div>
+        <ProjectDetails project={activeProject} closeDetails={toggleProjectDetails}/>
       </div>
-      <ProjectDetails project={activeProject} closeDetails={toggleProjectDetails}/>
     </div>
   )
 }

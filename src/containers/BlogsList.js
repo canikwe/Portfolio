@@ -15,9 +15,11 @@ const BlogsList = () => {
 
   return (
     <div id='blogs-list'>
-      <h1>Blog List</h1>
-      <div className='columns is-multiline is-centered is-desktop'>
-        {blogs.map(b => <Blog key={b.pubDate} blog={b} />)}
+      <div className='container'>
+        <h1>Blog List</h1>
+        <div className='columns is-multiline is-centered is-desktop'>
+          {blogs.map(b => <Blog key={b.pubDate} blog={b} />)}
+        </div>
       </div>
     </div>
   )

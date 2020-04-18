@@ -34,13 +34,11 @@ const NavBar = () => {
       <div className={navToggle ? "navbar-menu is-active" : "navbar-menu"}>
         <div className="navbar-start">
             <a className="navbar-item" href='#home'>Home</a>
-  
-            <a className="navbar-item" href='#about'>About</a>
 
+            <a className="navbar-item" href='#about'>About</a>
             <a className="navbar-item" href='#projects-list'>Projects</a>
             <a className="navbar-item" href='#blogs-list'>Blogs</a>
-          {/* <li>Blog</li>
-          <li>Contact</li> */}
+            <a className="navbar-item" href='#contact'>Contact</a>
         </div>
       </div>
     </nav>
