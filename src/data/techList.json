@@ -1,0 +1,21 @@
+[
+  {"name": "Javascript", "img": "javascript.svg"},
+  {"name": "React", "img": "react.svg"},
+  {"name": "CSS 3", "img": "css-3.svg"},
+  {"name": "Express", "img": "express.svg"},
+  {"name": "Google Developer", "img": "google-developers-icon.svg"},
+  {"name": "Heroku", "img": "heroku-icon.svg"},
+  {"name": "HTML 5", "img": "html-5.svg"},
+  {"name": "Jest", "img": "jest.svg"},
+  {"name": "Node JS", "img": "nodejs-icon.svg"},
+  {"name": "Postgresql", "img": "postgresql.svg"},
+  {"name": "Postman", "img": "postman.svg"},
+  {"name": "Rails", "img": "rails.svg"},
+  {"name": "React Router", "img": "react-router.svg"},
+  {"name": "Redux", "img": "redux.svg"},
+  {"name": "REST", "img": "rest.svg"},
+  {"name": "Ruby", "img": "ruby.svg"},
+  {"name": "Semantic UI", "img": "semantic-ui.svg"},
+  {"name": "Sinatra", "img": "sinatra.svg"},
+  {"name": "SQLite", "img": "sqlite.svg"}
+]
