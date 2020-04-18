@@ -1,8 +1,57 @@
 [
   {
-    "title": "My awesome project title",
-    "description": "Kombucha coloring book heirloom, stumptown portland VHS chia la croix deep v lumbersexual meditation sustainable try-hard kinfolk fashion axe. Letterpress waistcoat green poutine echo park.",
-    "tags": ["React", "Javascript", "Ruby"],
+    "id": 1,
+    "title": "myNetwork",
+    "description": "myNetwork is a web application written with a React-Redux frontend and a Rails API backend. It gives users full CRUD capabilities over their contacts and reminders for those contacts.",
+    "tags": [
+      "React", 
+      "Javascript", 
+      "Ruby", 
+      "Rails", 
+      "Redux"
+    ],
+    "frontendRepo": "https://github.com/canikwe/mynetwork-frontend",
+    "backendRepo": "https://github.com/canikwe/myNetwork-backend",
+    "demo": "https://youtu.be/q1ODMvxXRG0",
+    "featureImg": "https://bulma.io/images/placeholders/1280x960.png",
+    "secondaryImgs": [
+      "https://bulma.io/images/placeholders/1280x960.png",
+      "https://bulma.io/images/placeholders/1280x960.png",
+      "https://bulma.io/images/placeholders/1280x960.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "myTowne",
+    "description": "myTowne is a community bulletin board written with a React-JS frontend and a Rails API backend. It gives users full CRUD capabilities for their own posts and profile and read capabilities for community member's posts.",
+    "tags": [
+      "React",
+      "Javascript",
+      "Ruby",
+      "Rails"
+    ],
+    "frontendRepo": "https://github.com/canikwe/mytowne-frontend",
+    "backendRepo": "https://github.com/canikwe/mytowne-backend",
+    "demo": "https://www.youtube.com/watch?v=O_ioFWLxHQQ&feature=youtu.be",
+    "featureImg": "https://bulma.io/images/placeholders/1280x960.png",
+    "secondaryImgs": [
+      "https://bulma.io/images/placeholders/1280x960.png",
+      "https://bulma.io/images/placeholders/1280x960.png",
+      "https://bulma.io/images/placeholders/1280x960.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Animagus",
+    "description": "Animagus is a web application written in Vanilla JavaScript that shows simple DOM manipulation in a fun interactive game.",
+    "tags": [
+      "Javascript",
+      "Ruby",
+      "Rails"
+    ],
+    "frontendRepo": "https://github.com/canikwe/animagus-frontend",
+    "backendRepo": "https://github.com/canikwe/animagus-backend",
+    "demo": "https://youtu.be/wRHNADaTdS0",
     "featureImg": "https://bulma.io/images/placeholders/1280x960.png",
     "secondaryImgs": [
       "https://bulma.io/images/placeholders/1280x960.png",

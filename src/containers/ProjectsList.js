@@ -9,15 +9,15 @@ const ProjectsList = () => {
   const toggleProjectDetails = project => {
     updateActiveProject(project)
   }
-  
+
   return (
     <div id='projects-list'>
       <h1>Projects List</h1>
-      <div className="columns is-desktop is-multiline is-gapless">
-        <Project project={projectList[0]} toggleProjectDetails={toggleProjectDetails}/>
-        <Project project={projectList[0]} toggleProjectDetails={toggleProjectDetails}/>
-        <Project project={projectList[0]} toggleProjectDetails={toggleProjectDetails}/>
-        <Project project={projectList[0]} toggleProjectDetails={toggleProjectDetails}/>
+      <div className="columns is-desktop is-centered is-multiline is-gapless">
+        {projectList.map(p => (
+          <Project key={p.id} project={p} toggleProjectDetails={toggleProjectDetails}/>
+        ))}
+
       </div>
       <ProjectDetails project={activeProject} closeDetails={toggleProjectDetails}/>
     </div>

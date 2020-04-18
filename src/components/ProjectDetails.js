@@ -21,6 +21,11 @@ const ProjectDetails = ({ project, closeDetails}) => {
               <section className="tile is-child is-6 modal-card-body">
                 <p className="title is-3">{project.title}</p>
                 <p>{project.description}</p>
+                <p>
+                  <a href={project.demo}>Demo</a>
+                  <a href={project.frontendRepo}>Frontend Repo</a>
+                  <a href={project.backendRepo}>Backend Repo</a>
+                </p>
                 {project.tags.map(t => (
                   <span key={t} className="tag is-primary is-light">{t}</span>
                   )
