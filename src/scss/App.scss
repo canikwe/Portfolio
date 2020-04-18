@@ -82,11 +82,15 @@ nav {
 
 #projects-list {
   @include full-height;
-
+  
   .title.is-5 {
     margin: 0;
   }
 
+}
+
+#blogs-list {
+  @include full-height;
 }
 
 

@@ -38,6 +38,7 @@ const NavBar = () => {
             <a className="navbar-item" href='#about'>About</a>
 
             <a className="navbar-item" href='#projects-list'>Projects</a>
+            <a className="navbar-item" href='#blogs-list'>Blogs</a>
           {/* <li>Blog</li>
           <li>Contact</li> */}
         </div>

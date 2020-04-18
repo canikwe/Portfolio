@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import About from './components/About'
 import ProjectsList from './containers/ProjectsList'
 import './scss/App.scss'
+import BlogsList from './containers/BlogsList'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       </div>
       <About />
       <ProjectsList />
+      <BlogsList />
     </div>
   )
 }

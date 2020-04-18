@@ -9,7 +9,7 @@ const ProjectDetails = ({ project, closeDetails}) => {
   return (
     <div className={"modal is-active"}>
       <div className="modal-background" onClick={() => closeDetails(null)}></div>
-      <div className="modal-content">
+      <div className="modal-content box">
         <div className='tile is-ancestor'>
           <div className="tile is-vertical is-parent">
             <div className='tile'>
