@@ -1,9 +1,14 @@
 import React from 'react'
 
-const ProjectDetails = ({project}) => {
+const ProjectDetails = ({ project, closeDetails}) => {
+  if (!project) {
+    return (
+    <div className={"modal"}></div>
+    )
+  }
   return (
-    <div className="modal is-active">
-      <div className="modal-background"></div>
+    <div className={"modal is-active"}>
+      <div className="modal-background" onClick={() => closeDetails(null)}></div>
       <div className="modal-content">
         <div className='tile is-ancestor'>
           <div className="tile is-vertical is-parent">
@@ -33,11 +38,8 @@ const ProjectDetails = ({project}) => {
                 )
               )}
             </div>
-
-          </div>
-          
+          </div> 
         </div>
-
       </div>
     </div>
   )
