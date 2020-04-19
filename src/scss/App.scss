@@ -30,6 +30,7 @@ html {
   @include full-height;
 
   background: url('../images/home/evgeny-lazarenko-8HknSpvc1CU-unsplash.jpg');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,8 +39,9 @@ html {
   color: white;
 
   p {
-    margin: 0;
+    margin: 0 10px;
     font-style: italic;
+    font-weight: 500;
   }
 }
 
@@ -48,16 +50,6 @@ nav {
   background-color: $neutral;
   color: $base-dark;
   // text-align: left;
-
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-  .sticky + .content {
-    padding-top: 60px;
-  }
 }
 
 #about {
