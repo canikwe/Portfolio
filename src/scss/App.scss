@@ -49,11 +49,20 @@ nav {
   width: 100%;
   background-color: $neutral;
   color: $base-dark;
-  // text-align: left;
 }
 
 #about {
-  @include full-height;
+  // @include full-height;
+  // padding: 100px 0;
+  line-height: 2em;
+
+  .container {
+    margin: 0 10%;
+  }
+
+  .hero {
+    padding-top: 5%;
+  }
   
   .content {
     display: grid;

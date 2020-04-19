@@ -11,7 +11,7 @@ const ProjectsList = () => {
   }
 
   return (
-    <div id='projects-list'>
+    <section id='projects-list'>
       <div className='container'>
         <h1>Projects List</h1>
         <div className="columns is-desktop is-centered is-multiline is-gapless">
@@ -22,7 +22,7 @@ const ProjectsList = () => {
         </div>
         <ProjectDetails project={activeProject} closeDetails={toggleProjectDetails}/>
       </div>
-    </div>
+    </section>
   )
 }
 
