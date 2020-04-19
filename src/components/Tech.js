@@ -10,5 +10,3 @@ const Tech = ({tech: { name, level }}) => {
 }
 
 export default Tech
-
-// <img className='tech' key={t.name} alt={t.name} src={require(`../images/techList/${t.img}`)} />

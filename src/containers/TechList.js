@@ -4,7 +4,7 @@ import Tech from '../components/Tech'
 
 const TechList = () => {
   const filteredTechList = () => {
-    return techList.filter(t => t.level > 40).sort((a, b) => {
+    return techList.filter(t => t.level > 50).sort((a, b) => {
       const n = b.level - a.level
       if (n !== 0) return n
 

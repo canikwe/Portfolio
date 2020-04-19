@@ -11,16 +11,18 @@ const ProjectsList = () => {
   }
 
   return (
-    <section id='projects-list'>
-      <div className='container'>
-        <h1>Projects List</h1>
-        <div className="columns is-desktop is-centered is-multiline is-gapless">
-          {projectList.map(p => (
-            <Project key={p.id} project={p} toggleProjectDetails={toggleProjectDetails}/>
-          ))}
+    <section id='projects-list' className="hero is-primary is-bold is-fullheight">
+      <div className="hero-body">
+        <div className='container'>
+          <h1 className='title'>Projects List</h1>
+          <div className="columns is-desktop is-centered is-multiline is-gapless">
+            {projectList.map(p => (
+              <Project key={p.id} project={p} toggleProjectDetails={toggleProjectDetails}/>
+            ))}
 
+          </div>
+          <ProjectDetails project={activeProject} closeDetails={toggleProjectDetails}/>
         </div>
-        <ProjectDetails project={activeProject} closeDetails={toggleProjectDetails}/>
       </div>
     </section>
   )
