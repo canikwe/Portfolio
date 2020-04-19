@@ -51,18 +51,18 @@ nav {
   color: $base-dark;
 }
 
-#about {
+section#about {
   // @include full-height;
   // padding: 100px 0;
   line-height: 2em;
 
   .container {
-    margin: 0 10%;
+    // margin: 0 10%;
   }
 
-  .hero {
-    padding-top: 5%;
-  }
+  // .hero-body  {
+  //   padding-top: 10% 10%;
+  // }
   
   .content {
     display: grid;
@@ -85,9 +85,18 @@ nav {
     width: 100%;
     
     #tech-list {
-      display: grid;
-      gap: 5px;
-      grid-template-columns: repeat(auto-fill, minmax(auto, 75px));
+      display: flex;
+      flex-direction: column;
+      // display: grid;
+      // gap: 5px;
+      // grid-template-columns: repeat(auto-fill, minmax(auto, 75px));
+
+      .tech {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        align-items: center;
+        // line-height: 1em;
+      }
     }
 
     .tech {
