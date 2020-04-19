@@ -2,19 +2,19 @@ import React, { useState, useEffect } from 'react'
 
 const NavBar = () => {
   const [navToggle, updateNavToggle] = useState(false)
+  let ss
+  let nav
 
   useEffect(() => {
     window.addEventListener('scroll', myFunction)
+    nav = document.querySelector('.navbar')
+    ss = nav.offsetTop
   }, [])
 
   
   const myFunction = e => {
-    const nav = document.querySelector('.navbar')
-    const ss = nav.offsetTop
-
     if (window.pageYOffset >= ss) {
       nav.classList.add("is-fixed-top")
-      if (window.pageYOffset === 0) nav.classList.remove("is-fixed-top")
     } else {
       nav.classList.remove("is-fixed-top")
     }
@@ -39,6 +39,7 @@ const NavBar = () => {
             <a className="navbar-item" href='#projects-list'>Projects</a>
             <a className="navbar-item" href='#blogs-list'>Blogs</a>
             <a className="navbar-item" href='#contact'>Contact</a>
+            <a className="navbar-item" href='#resume'>Resume</a>
         </div>
       </div>
     </nav>

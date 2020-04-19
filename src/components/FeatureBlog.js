@@ -4,7 +4,7 @@ const FeatureBlog = ({blog: {title, link,thumbnail}}) => {
   return (
     <div className='tile is-parent is-7'>
       <div className='tile is-child'>
-        <figure className="image is-square">
+        <figure className="image is-4by3">
           <img src={thumbnail} />
         </figure>
         <div className='content'>

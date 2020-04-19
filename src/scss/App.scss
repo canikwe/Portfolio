@@ -30,17 +30,12 @@ html {
   @include full-height;
 
   background: url('../images/home/evgeny-lazarenko-8HknSpvc1CU-unsplash.jpg');
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 1fr auto;
-  justify-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
   font-size: calc(10px + 2vmin);
   color: white;
-
-  div {
-    align-self: center;
-    text-align: left;
-  }
 
   p {
     margin: 0;
@@ -53,6 +48,16 @@ nav {
   background-color: $neutral;
   color: $base-dark;
   // text-align: left;
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
 }
 
 #about {
