@@ -15,9 +15,7 @@
     "demo": "https://youtu.be/q1ODMvxXRG0",
     "featureImg": "https://bulma.io/images/placeholders/1280x960.png",
     "secondaryImgs": [
-      "https://bulma.io/images/placeholders/1280x960.png",
-      "https://bulma.io/images/placeholders/1280x960.png",
-      "https://bulma.io/images/placeholders/1280x960.png"
+      "1280x960.png"
     ]
   },
   {
@@ -35,9 +33,7 @@
     "demo": "https://www.youtube.com/watch?v=O_ioFWLxHQQ&feature=youtu.be",
     "featureImg": "https://bulma.io/images/placeholders/1280x960.png",
     "secondaryImgs": [
-      "https://bulma.io/images/placeholders/1280x960.png",
-      "https://bulma.io/images/placeholders/1280x960.png",
-      "https://bulma.io/images/placeholders/1280x960.png"
+      "1280x960.png"
     ]
   },
   {
@@ -54,9 +50,8 @@
     "demo": "https://youtu.be/wRHNADaTdS0",
     "featureImg": "https://bulma.io/images/placeholders/1280x960.png",
     "secondaryImgs": [
-      "https://bulma.io/images/placeholders/1280x960.png",
-      "https://bulma.io/images/placeholders/1280x960.png",
-      "https://bulma.io/images/placeholders/1280x960.png"
+      "animagus1.png",
+      "1280x960.png"
     ]
   }
 ]

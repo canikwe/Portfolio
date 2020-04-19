@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import About from './containers/About'
 import ProjectsList from './containers/ProjectsList'
 import './scss/App.scss'
+// import '../node_modules/bulma-carousel/dist/css/bulma-carousel.min.css'
 import BlogsList from './containers/BlogsList'
 import Footer from './components/Footer'
 

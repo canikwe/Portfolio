@@ -1,13 +1,9 @@
 @import 'constants';
 
 // Bulma styles
-// @import '../../node_modules/bulma/sass/utilities/_all.sass';
-// @import '../../node_modules/bulma/sass/components/navbar.sass';
-// @import "../../node_modules/bulma/sass/components/navbar.sass";
 @import "../../node_modules/bulma/bulma.sass";
 
-
-
+// Mixins
 @mixin full-height {
   min-height: 100vh;
 }
@@ -110,11 +106,30 @@ section#about {
     margin: 0;
   }
 
-  .content {
+  .card .content {
     background-color: rgba(2, 66, 47, 0.575);
-    color: white;
   }
 
+  .modal-content {
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+
+    .image {
+      position: unset;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &.box {
+      padding: 0;
+    }
+  }
 }
 
 #blogs-list {
