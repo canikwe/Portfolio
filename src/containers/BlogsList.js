@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Blog from '../components/Blog'
+import FeatureBlog from '../components/FeatureBlog'
 
 const BlogsList = () => {
   const [blogs, updateBlogs] = useState([])
@@ -13,12 +14,24 @@ const BlogsList = () => {
       })
   }, [])
 
+  if (!blogs.length) {
+    return (
+      <h1>Loading...</h1>
+    )
+  }
+
   return (
     <div id='blogs-list'>
-      <div className='container'>
+      <div className="container">
         <h1>Blog List</h1>
-        <div className='columns is-multiline is-centered is-desktop'>
-          {blogs.map(b => <Blog key={b.pubDate} blog={b} />)}
+        <div className="tile is-ancestor">
+          <FeatureBlog blog={blogs[0]} />
+          <div className='tile is-parent is-vertical is-4'>
+            {/* <div className='tile is-child'> */}
+              {blogs.slice(1, blogs.length).map(b => <Blog key={b.pubDate} blog={b} />)}
+            {/* </div> */}
+          </div>
+
         </div>
       </div>
     </div>

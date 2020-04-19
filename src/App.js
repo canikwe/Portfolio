@@ -5,6 +5,7 @@ import About from './components/About'
 import ProjectsList from './containers/ProjectsList'
 import './scss/App.scss'
 import BlogsList from './containers/BlogsList'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
       <ProjectsList />
       <BlogsList />
+      <Footer />
     </div>
   )
 }

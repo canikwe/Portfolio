@@ -2,14 +2,13 @@ import React from 'react'
 
 const Blog = ({blog: {thumbnail, title, pubDate, link}}) => {
   return (
-    <div className='column is-3'>
-      <div className="card">
-        <div className="card-image">
+      <div className="tile is-child box">
+        {/* <div className="card-image">
           <figure className="image is-square">
             <img src={ thumbnail } alt="thumbnail" />
           </figure>
-        </div>
-        <div className="card-content">
+        </div> */}
+        <div className="content">
           <div className="media">
             {/* <div className="media-left">
               <figure className="image is-48x48">
@@ -17,7 +16,7 @@ const Blog = ({blog: {thumbnail, title, pubDate, link}}) => {
               </figure>
             </div> */}
             <div className="media-content">
-              <p className={title.length > 40 ? "title is-5" : "title is-4"}>{ title }</p>
+              <p className="title is-5">{ title }</p>
               <p className="subtitle is-6">@c.anikwe</p>
               <time dateTime={ pubDate }>11:09 PM - 1 Jan 2016</time>
 
@@ -41,7 +40,6 @@ const Blog = ({blog: {thumbnail, title, pubDate, link}}) => {
         </footer>
 
       </div>
-    </div>
   )
 }
 
