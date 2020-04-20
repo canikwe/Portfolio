@@ -15,7 +15,6 @@ const Project = ({project, toggleProjectDetails}) => {
           <p className="title is-4">{project.title}</p>
           {project.description}
           <br />
-          {/* <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time> */}
         </div>
       </div>
     </div>

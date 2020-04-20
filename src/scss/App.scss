@@ -48,8 +48,6 @@ nav {
 }
 
 section#about {
-  // @include full-height;
-  // padding: 100px 0;
   line-height: 2em;
 
   .hero.is-fullheight  {
@@ -80,15 +78,11 @@ section#about {
     #tech-list {
       display: flex;
       flex-direction: column;
-      // display: grid;
-      // gap: 5px;
-      // grid-template-columns: repeat(auto-fill, minmax(auto, 75px));
 
       .tech {
         display: grid;
         grid-template-columns: 25% 75%;
         align-items: center;
-        // line-height: 1em;
       }
     }
 
@@ -98,10 +92,7 @@ section#about {
   }
 }
 
-#projects-list {
-  // @include full-height;
-  // @include center;
-  
+#projects-list {  
   .title.is-5 {
     margin: 0;
   }
@@ -135,6 +126,15 @@ section#about {
 #blogs-list {
   @include full-height;
   @include center;
+
+  .card {
+    border-radius: 6px;
+
+    img {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+  }
 }
 
 

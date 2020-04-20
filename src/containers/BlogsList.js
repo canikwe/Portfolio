@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Blog from '../components/Blog'
-import FeatureBlog from '../components/FeatureBlog'
 
 const BlogsList = () => {
   const [blogs, updateBlogs] = useState([])
@@ -10,7 +9,6 @@ const BlogsList = () => {
       .then((res) => res.json())
       .then((data) => {
         updateBlogs(data.items.filter(b => b.categories.length))
-        console.log(data)
       })
   }, [])
 
@@ -23,15 +21,11 @@ const BlogsList = () => {
   return (
     <div id='blogs-list'>
       <div className="container">
-        <h1>Blog List</h1>
-        <div className="tile is-ancestor">
-          <FeatureBlog blog={blogs[0]} />
-          <div className='tile is-parent is-vertical is-4'>
-            {/* <div className='tile is-child'> */}
-              {blogs.slice(1, blogs.length).map(b => <Blog key={b.pubDate} blog={b} />)}
-            {/* </div> */}
-          </div>
-
+        <h1 className='title'>Blog List</h1>
+        <div className="columns is-desktop is-centered is-multiline">
+          {
+            blogs.map(b => <Blog key={b.pubDate} blog={b} />)
+          }
         </div>
       </div>
     </div>
