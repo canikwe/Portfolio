@@ -13,7 +13,7 @@
     "frontendRepo": "https://github.com/canikwe/mynetwork-frontend",
     "backendRepo": "https://github.com/canikwe/myNetwork-backend",
     "demo": "https://youtu.be/q1ODMvxXRG0",
-    "featureImg": "https://bulma.io/images/placeholders/1280x960.png",
+    "featureImg": "1280x960.png",
     "secondaryImgs": [
       "1280x960.png"
     ]
@@ -31,7 +31,7 @@
     "frontendRepo": "https://github.com/canikwe/mytowne-frontend",
     "backendRepo": "https://github.com/canikwe/mytowne-backend",
     "demo": "https://www.youtube.com/watch?v=O_ioFWLxHQQ&feature=youtu.be",
-    "featureImg": "https://bulma.io/images/placeholders/1280x960.png",
+    "featureImg": "1280x960.png",
     "secondaryImgs": [
       "1280x960.png"
     ]
@@ -48,10 +48,13 @@
     "frontendRepo": "https://github.com/canikwe/animagus-frontend",
     "backendRepo": "https://github.com/canikwe/animagus-backend",
     "demo": "https://youtu.be/wRHNADaTdS0",
-    "featureImg": "https://bulma.io/images/placeholders/1280x960.png",
+    "featureImg": "animagus_feature.png",
     "secondaryImgs": [
       "animagus1.png",
-      "1280x960.png"
+      "animagus2.png",
+      "animagus3.png",
+      "animagus4.png",
+      "animagus5.png"
     ]
   }
 ]
