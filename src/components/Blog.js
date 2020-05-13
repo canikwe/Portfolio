@@ -11,22 +11,22 @@ const Blog = ({blog: {thumbnail, title, pubDate, link, content}}) => {
 
   return (
     <div className="column is-one-quarter">
-      <a href={link}>
+      <a href={link} target="_blank">
         <div className="card">
           <div className="card-image">
-            <figure className="image is-square">
-              <img src={ thumbnail } alt="thumbnail" />
+            <figure className="image is-4by3">
+              <img src={ thumbnail } alt="thumbnail" className='blog-img' />
             </figure>
           </div>
-          <div className="content">
+          <div className="card-content">
             <div className="media">
               <div className="media-content">
-                <p className="title is-5">{ title.slice(0, 40) }...</p>
+                <p className="title is-5">{ title.slice(0, 50) }...</p>
                 <p className="subtitle is-6">
-                  <time dateTime={pubDate}>{moment(pubDate).format("MMM Do, YY")}</time>
+                  <time dateTime={pubDate}>{moment(pubDate).format("MMM Do, YYYY")}</time>
                 </p>
                 <p className='content'>
-                  {convertToText().slice(0, 85)}...
+                  {convertToText().slice(0, 90)}...
                 </p>
               </div>
             </div>

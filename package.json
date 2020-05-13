@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://www.chineanikwe.com",
   "dependencies": {
+    "@mdi/js": "^5.1.45",
+    "@mdi/react": "^1.4.0",
     "bulma": "^0.8.2",
     "moment": "^2.24.0",
     "node-sass": "^4.13.1",

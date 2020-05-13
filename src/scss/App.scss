@@ -1,4 +1,5 @@
 @import 'constants';
+@import 'joke';
 
 // Bulma styles
 @import "../../node_modules/bulma/bulma.sass";
@@ -8,10 +9,38 @@
   min-height: 100vh;
 }
 
+@mixin parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.65;
+
+  .card {
+    width: 50%;
+
+    @media only screen and (max-width: 765px) {
+      width: 85%;
+    }
+
+    h1 {
+      font-weight: normal;
+      font-style: italic;
+      display: inline;
+    }
+  }
+
+}
+
 @mixin center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin drop-shadow {
+-webkit-box-shadow: 0px 0px 12px 5px rgba(27,27,27,0.7); 
+box-shadow: 0px 0px 12px 5px rgba(27,27,27,0.7);
 }
 
 html {
@@ -24,21 +53,37 @@ html {
 
 #home {
   @include full-height;
-
-  background: url('../images/home/evgeny-lazarenko-8HknSpvc1CU-unsplash.jpg');
+  
+  background: url('https://images.unsplash.com/photo-1518082593638-b6e73b35d39a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2548&q=80');
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
+  // align-items: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80vh 20vh;
+  justify-items: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  
+  @include parallax;
 
   p {
+    align-self: flex-end;
     margin: 0 10px;
     font-style: italic;
     font-weight: 500;
   }
+
+  div {
+        align-self: flex-end;
+
+  }
+  svg {
+    align-self: flex-end;
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow( -1px 3px 2px rgba(0, 0, 0, .7));  }
 }
 
 nav {
@@ -48,6 +93,8 @@ nav {
 }
 
 section#about {
+  @include drop-shadow;
+
   line-height: 2em;
 
   .hero.is-fullheight  {
@@ -56,9 +103,10 @@ section#about {
   
   .content {
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 5px;
+    grid-template-columns: 45% 45%;
+    gap: 10px;
     justify-items: center;
+    align-items: center;
 
     @media only screen and (max-width: 650px) {
       grid-template-columns: 100%;
@@ -67,9 +115,9 @@ section#about {
   }
 
   #profile {
-    max-width: 50%;
-    border-radius: 50%;
-    border: dotted $primary 2px;
+    max-width: 55%;
+    border-radius: 55%;
+    border: dotted $primary 4px;
   }
 
   #tech-list-container {
@@ -81,7 +129,7 @@ section#about {
 
       .tech {
         display: grid;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 30% 70%;
         align-items: center;
       }
     }
@@ -92,7 +140,17 @@ section#about {
   }
 }
 
-#projects-list {  
+#projects-header {
+  background: url('../images/projects/ricardo-resende-4eqOc39NCRQ-unsplash (1).jpg');
+  @include full-height;
+  @include parallax;
+  @include center;
+
+}
+
+#projects-list {
+  @include drop-shadow;
+  
   .title.is-5 {
     margin: 0;
   }
@@ -123,17 +181,18 @@ section#about {
   }
 }
 
-#blogs-list {
+#blogs-header {
+  background: url('../images/parallax/retrosupply-jLwVAUtLOAQ-unsplash.jpg');
   @include full-height;
+  @include parallax;
   @include center;
+}
 
-  .card {
-    border-radius: 6px;
+#blogs-list {
+  @include drop-shadow;
 
-    img {
-      border-top-left-radius: 6px;
-      border-top-right-radius: 6px;
-    }
+  img.blog-img {
+    object-fit: fill;
   }
 }
 

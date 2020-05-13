@@ -13,3 +13,12 @@
   - BlogPostsList
     - BlogPost...
   -Contact
+
+  ## To-Do
+
+  - Add Project Screenshots
+  - Add Contact
+  - Add Resume
+  - Customize Colors
+  - Add Animations
+  - Update Favicon
