@@ -40,12 +40,12 @@ const Contact = () => {
             <h1 className='title'>Contact Me</h1>
             <div className='extra'>
               <span className='contact-item'>
-                <a target='_blank' href='https://github.com/canikwe'>
+                <a target='_blank' rel="noopener noreferrer" href='https://github.com/canikwe'>
                   <FontAwesomeIcon icon={faGithub} size="2x" />
                 </a>
               </span>
               <span className='contact-item'>
-                <a target='_blank' href='https://www.linkedin.com/in/chine-anikwe/'>
+                <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/in/chine-anikwe/'>
                   <FontAwesomeIcon icon={faLinkedin} size="2x" />
                 </a>
               </span>
@@ -71,8 +71,8 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div class="field">
-                <label class="label">Subject</label>
+              <div className="field">
+                <label className="label">Subject</label>
                 <div className="control">
                   <input className="input" type="text" name='subject' placeholder="Subject" value={form.subject} onChange={handleFormUpdate} />
                 </div>
