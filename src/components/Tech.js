@@ -4,7 +4,7 @@ const Tech = ({tech: { name, level }}) => {
   return (
     <div className='tech'>
       { name }
-      <progress class="progress is-primary" value={level} max="100">{`${level}%`}</progress>
+      <progress className="progress is-primary" value={level} max="100">{`${level}%`}</progress>
     </div>
   )
 }

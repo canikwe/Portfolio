@@ -11,7 +11,7 @@ const Blog = ({blog: {thumbnail, title, pubDate, link, content}}) => {
 
   return (
     <div className="column is-one-quarter">
-      <a href={link} target="_blank">
+      <a href={link} target="_blank" rel="noopener noreferrer">
         <div className="card">
           <div className="card-image">
             <figure className="image is-4by3">

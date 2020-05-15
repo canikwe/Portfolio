@@ -25,8 +25,8 @@ const BlogsList = () => {
         <Joke />
       </div>
       <div id='blogs-list'>
-        <section class="hero is-fullheight is-light is-bold">
-          <div class="hero-body">
+        <section className="hero is-fullheight is-light is-bold">
+          <div className="hero-body">
             <div className="container">
               <h1 className='title'>Blogs</h1>
               <div className="columns is-desktop is-centered is-multiline">
@@ -34,8 +34,8 @@ const BlogsList = () => {
                   blogs.slice(0, 4).map(b => <Blog key={b.pubDate} blog={b} />)
                 }
               </div>
-              <a href='https://medium.com/@c.anikwe' target='_blank'>
-                <button class="button is-outlined is-primary is-pulled-right">
+              <a href='https://medium.com/@c.anikwe' target='_blank' rel="noopener noreferrer">
+                <button className="button is-outlined is-primary is-pulled-right">
                   {/* <span class="icon">
                     <Icon path={mdiChevronDoubleDown}
                       title="Chevron Down to About Section"

@@ -6,11 +6,11 @@ const About = () => {
   return (
     
     <section id='about'>
-      <section class="hero is-fullheight is-light is-bold">
+      <section className="hero is-fullheight is-light is-bold">
           <div className='header'>
             <p className='title is-3'>About</p>
           </div>
-        <div class="hero-body">
+        <div className="hero-body">
           <section className='content'>
             <Bio />
             <TechList />

@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "myNetwork",
-    "description": "myNetwork is a web application written with a React-Redux frontend and a Rails API backend. It gives users full CRUD capabilities over their contacts and reminders for those contacts.",
+    "title": "myBudee",
+    "description": "myBudee (formerly myTowne) is a web application written with a React-Redux frontend and a Rails API backend. It gives users full CRUD capabilities over their contacts and reminders for those contacts.",
     "tags": [
       "React", 
       "Javascript", 
@@ -13,9 +13,13 @@
     "frontendRepo": "https://github.com/canikwe/mynetwork-frontend",
     "backendRepo": "https://github.com/canikwe/myNetwork-backend",
     "demo": "https://youtu.be/q1ODMvxXRG0",
-    "featureImg": "1280x960.png",
+    "featureImg": "myBudee_feature.png",
     "secondaryImgs": [
-      "1280x960.png"
+      "myBudee2.png",
+      "myBudee3.png",
+      "myBudee4.png",
+      "myBudee5.png",
+      "myBudee6.png"
     ]
   },
   {
@@ -31,9 +35,13 @@
     "frontendRepo": "https://github.com/canikwe/mytowne-frontend",
     "backendRepo": "https://github.com/canikwe/mytowne-backend",
     "demo": "https://www.youtube.com/watch?v=O_ioFWLxHQQ&feature=youtu.be",
-    "featureImg": "1280x960.png",
+    "featureImg": "myTowne_feature.png",
     "secondaryImgs": [
-      "1280x960.png"
+      "myTowne1.png",
+      "myTowne2.png",
+      "myTowne3.png",
+      "myTowne4.png",
+      "myTowne5.png"
     ]
   },
   {

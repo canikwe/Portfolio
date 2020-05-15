@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import Icon from '@mdi/react'
-import { mdiSync } from '@mdi/js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSync } from '@fortawesome/free-solid-svg-icons'
 
 const Joke = () => {
   const [joke, updateJoke] = useState({ joke: '' })
@@ -28,16 +28,10 @@ const Joke = () => {
 
   return (
     <div className='card paper'>
-      <div class="card-content">
+      <div className="card-content">
         <h1 className='title'>{joke.joke}</h1>
-        <Icon path={mdiSync}
-          title="Chevron Down to About Section"
-          size='1.5em'
-          horizontal
-          color="teal"
-          spin={loading}
-          onClick={getJoke}
-        />
+        <FontAwesomeIcon icon={faSync} spin={loading} onClick={getJoke} color="teal" />
+
       </div>
     </div>
   )
