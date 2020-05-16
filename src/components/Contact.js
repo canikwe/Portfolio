@@ -54,7 +54,7 @@ const Contact = () => {
 
             <form
               onSubmit={submitForm}
-              action={process.env.REACT_APP_CONTACT_URL}
+              action='https://formspree.io/mlepdova'
               method="POST"
             >
               <div className="field">
