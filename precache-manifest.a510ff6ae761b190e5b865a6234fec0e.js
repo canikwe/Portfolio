@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "b7b0ec1d8f1cd7dcc807",
+    "revision": "b303c24d31f6bbdf9894",
     "url": "/static/css/main.a27ab6a5.chunk.css"
   },
   {
-    "revision": "b7b0ec1d8f1cd7dcc807",
-    "url": "/static/js/main.014e3437.chunk.js"
+    "revision": "b303c24d31f6bbdf9894",
+    "url": "/static/js/main.ea503662.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "4233cda874ff439df971",
-    "url": "/static/js/2.d4daa5bd.chunk.js"
+    "revision": "b6d64e59252806b0798e",
+    "url": "/static/js/2.30e2a32e.chunk.js"
   },
   {
     "revision": "67a4ddb3f2f2296f80c89124e3e8fb32",
@@ -116,7 +116,7 @@ self.__precacheManifest = [
     "url": "/static/media/pavan-trikutam-71CjSSB83Wo-unsplash.251f3743.jpg"
   },
   {
-    "revision": "97799f517710a2407c0dcbe52f4f577d",
+    "revision": "bdb2015496b17a35c6ed9056561f9294",
     "url": "/index.html"
   }
 ];
