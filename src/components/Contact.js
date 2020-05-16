@@ -15,7 +15,7 @@ const Contact = () => {
     const htmlForm = e.target
     const data = new FormData(htmlForm)
     const xhr = new XMLHttpRequest()
-    xhr.open(htmlForm.method, htmlForm.action);
+    xhr.open(htmlForm.method, 'https://formspree.io/mlepdova');
     xhr.setRequestHeader("Accept", "application/json");
     xhr.onreadystatechange = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
@@ -54,7 +54,6 @@ const Contact = () => {
 
             <form
               onSubmit={submitForm}
-              action='https://formspree.io/mlepdova'
               method="POST"
             >
               <div className="field">
