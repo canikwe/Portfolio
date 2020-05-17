@@ -5,8 +5,10 @@ import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 const Home = () => {
   return (
     <div id="home">
-      <p className='title is-2 has-text-dark'>I'm Chine Anikwe</p>
-      
+      <div>
+        <h1 className='glow'>hello!</h1>
+        <p className='title is-2 has-text-light'>I'm Chine Anikwe</p>
+      </div>
       <div>
         <a href='#about'>
           <FontAwesomeIcon 
