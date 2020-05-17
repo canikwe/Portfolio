@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7ca4be6f45b85c281135",
-    "url": "/static/css/main.2a922444.chunk.css"
+    "revision": "2f8c53fb51fec09f6d11",
+    "url": "/static/css/main.e9a9f181.chunk.css"
   },
   {
-    "revision": "7ca4be6f45b85c281135",
-    "url": "/static/js/main.1295b302.chunk.js"
+    "revision": "2f8c53fb51fec09f6d11",
+    "url": "/static/js/main.21ff73a7.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -104,10 +104,6 @@ self.__precacheManifest = [
     "url": "/static/media/ricardo-resende-4eqOc39NCRQ-unsplash (1).ae6da292.jpg"
   },
   {
-    "revision": "96980fca22ad5dcb261b783f68dd2d32",
-    "url": "/static/media/main_hello.96980fca.jpeg"
-  },
-  {
     "revision": "7280a74af88f9e0a320fc5ea143b31bc",
     "url": "/static/media/retrosupply-jLwVAUtLOAQ-unsplash.7280a74a.jpg"
   },
@@ -116,7 +112,11 @@ self.__precacheManifest = [
     "url": "/static/media/pavan-trikutam-71CjSSB83Wo-unsplash.251f3743.jpg"
   },
   {
-    "revision": "c85a679aa9ee4b97a073186487bd4f3c",
+    "revision": "9c1dd41c736ebc5063e35c79b9f3f672",
+    "url": "/static/media/photo-1497250681960-ef046c08a56e.9c1dd41c.jpeg"
+  },
+  {
+    "revision": "6f88c60606e3535f78e24a52d729d248",
     "url": "/index.html"
   }
 ];
