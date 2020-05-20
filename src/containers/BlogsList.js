@@ -29,7 +29,7 @@ const BlogsList = () => {
           <div className="hero-body">
             <div className="container">
               <h1 className='title'>Blogs</h1>
-              <div className="columns is-desktop is-centered is-multiline">
+              <div className="columns is-centered is-multiline is-three-quarters-mobile is-two-thirds-tablet is-half-desktop">
                 {
                   blogs.slice(0, 4).map(b => <Blog key={b.pubDate} blog={b} />)
                 }
