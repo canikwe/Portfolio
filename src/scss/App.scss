@@ -272,17 +272,6 @@ section#about {
       width: 95%;
     }
   }
-
-  .extra {
-    margin-bottom: 15px;
-    .contact-item {
-      margin: 0 20px;
-
-      a {
-        color: white;
-      }
-    }
-  }
 }
 
 .App-link {
@@ -295,5 +284,21 @@ section#about {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+footer.footer {
+  padding: 3rem 1.5rem 4rem;
+
+  .extra {
+    margin-bottom: 15px;
+
+    .contact-item {
+      margin: 0 20px;
+
+      a {
+        color: $base-dark;
+      }
+    }
   }
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Joke from './Joke'
 
 const Contact = () => {
@@ -38,19 +38,8 @@ const Contact = () => {
         <div className="hero-body">
           <div className='container'>
             <h1 className='title'>Contact Me</h1>
-            <div className='extra'>
-              <span className='contact-item'>
-                <a target='_blank' rel="noopener noreferrer" href='https://github.com/canikwe'>
-                  <FontAwesomeIcon icon={faGithub} size="2x" />
-                </a>
-              </span>
-              <span className='contact-item'>
-                <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/in/chine-anikwe/'>
-                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                </a>
-              </span>
-            </div>
-            <div className='box'>
+
+            <div className='box is-radiusless'>
 
             <form
               onSubmit={submitForm}
@@ -59,28 +48,28 @@ const Contact = () => {
               <div className="field">
                 <label className="label">Name</label>
                 <div className="control">
-                  <input className="input" type="text" placeholder="Enter name here" name='name' value={form.name} onChange={handleFormUpdate}  />
+                  <input className="input" type="text" placeholder="Elizabeth Bennet" name='name' value={form.name} onChange={handleFormUpdate}  />
                 </div>
               </div>
 
               <div className="field">
                 <label className="label">Email</label>
                 <div className="control">
-                  <input className="input" type="email" name='email' placeholder="Email" value={form.email} onChange={handleFormUpdate} />
+                  <input className="input" type="email" name='email' placeholder="elizabeth@bennet.com" value={form.email} onChange={handleFormUpdate} />
                 </div>
               </div>
 
               <div className="field">
                 <label className="label">Subject</label>
                 <div className="control">
-                  <input className="input" type="text" name='subject' placeholder="Subject" value={form.subject} onChange={handleFormUpdate} />
+                  <input className="input" type="text" name='subject' placeholder="To Whom It May Concern..." value={form.subject} onChange={handleFormUpdate} />
                 </div>
               </div>
 
               <div className="field">
                 <label className="label">Message</label>
                 <div className="control">
-                  <textarea className="textarea" name="message" value={form.message} onChange={handleFormUpdate} placeholder='Message' />
+                    <textarea className="textarea" name="message" value={form.message} onChange={handleFormUpdate} placeholder='It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.' />
                 </div>
               </div>
   
