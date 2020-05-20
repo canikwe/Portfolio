@@ -203,9 +203,6 @@ section#about {
 
   .modal-content {
 
-    // display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 95% 5%;
     overflow-y: auto;
     overflow-x: hidden;
     width: 70vw;
@@ -233,6 +230,10 @@ section#about {
 
     &.is-full-height {
       height: 90vh;
+    }
+
+    .tile.is-vertical.is-parent {
+      display: unset;
     }
   }
 }
