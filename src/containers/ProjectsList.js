@@ -26,7 +26,10 @@ const ProjectsList = () => {
               ))}
 
             </div>
-            <ProjectDetails project={activeProject} closeDetails={toggleProjectDetails}/>
+            {
+              activeProject ? <ProjectDetails project={activeProject} closeDetails={toggleProjectDetails}/> : null
+            }
+
           </div>
         </div>
       </section>

@@ -203,16 +203,18 @@ section#about {
 
   .modal-content {
 
-    display: grid;
+    // display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 60% 40%;
-    overflow: auto;
+    grid-template-rows: 95% 5%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 70vw;
 
     div.image .slider {
       height: 100% !important;
     }
 
-    .image {
+    .image.is-square {
       position: unset;
       
       img {
@@ -221,13 +223,16 @@ section#about {
         object-fit: cover;
       }
     }
+    .project-img {
+      width: 100%;  
+    }
 
     &.box {
       padding: 0;
     }
 
     &.is-full-height {
-      height: 80vh;
+      height: 90vh;
     }
   }
 }

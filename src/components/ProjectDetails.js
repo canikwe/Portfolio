@@ -3,12 +3,6 @@ import Carousel from 'nuka-carousel';
 
 const ProjectDetails = ({ project, closeDetails}) => {
   
-  if (!project) {
-    return (
-    <div className={"modal"}></div>
-    )
-  }
-  
   return (
     <div className="modal is-active">
       <div className="modal-background" onClick={() => closeDetails(null)}></div>
@@ -18,7 +12,7 @@ const ProjectDetails = ({ project, closeDetails}) => {
             {
               project.secondaryImgs.map(i => {
                 return (
-                  <img className='project-img' src={require(`../images/projects/${i}`)} alt='feature' />
+                  <img key={i} className='project-img' src={require(`../images/projects/${i}`)} alt={project.title} />
                 )
               })
             }
