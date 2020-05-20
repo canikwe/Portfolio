@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "myBudee",
+    "tagLine": "Track your budees and get reminders to contact them!",
     "description": "myBudee (formerly myTowne) is a web application written with a React-Redux frontend and a Rails API backend. It gives users full CRUD capabilities over their contacts and reminders for those contacts.",
     "tags": [
       "React", 
@@ -25,6 +26,7 @@
   {
     "id": 2,
     "title": "myTowne",
+    "tagLine": "A community board to connect you with your neighbors",
     "description": "myTowne is a community bulletin board written with a React-JS frontend and a Rails API backend. It gives users full CRUD capabilities for their own posts and profile and read capabilities for community member's posts.",
     "tags": [
       "React",
@@ -47,6 +49,7 @@
   {
     "id": 3,
     "title": "Animagus",
+    "tagLine": "Make a pet and keep it alive!",
     "description": "Animagus is a web application written in Vanilla JavaScript that shows simple DOM manipulation in a fun interactive game.",
     "tags": [
       "Javascript",

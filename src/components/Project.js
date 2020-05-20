@@ -12,7 +12,7 @@ const Project = ({project, toggleProjectDetails}) => {
         </div>
         <div className="content">
           <p className="title is-4 has-text-dark">{project.title}</p>
-          {project.description}
+          {project.tagLine}
           <br />
         </div>
       </div>
