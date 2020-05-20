@@ -20,7 +20,7 @@ const ProjectsList = () => {
         <div className="hero-body">
           <div className='container'>
             <h1 className='title'>Projects</h1>
-            <div className="columns is-desktop is-centered is-multiline">
+            <div className="columns is-centered is-multiline is-three-quarters-mobile is-two-thirds-tablet is-half-desktop">
               {projectList.map(p => (
                 <Project key={p.id} project={p} toggleProjectDetails={toggleProjectDetails}/>
               ))}
