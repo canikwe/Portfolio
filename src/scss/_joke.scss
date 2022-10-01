@@ -1,39 +1,37 @@
+.paper:before,
+.paper:after {
+  position: absolute;
+  width: 48%;
+  height: 10px;
+  content: ' ';
+  left: 20px;
+  bottom: 40px;
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
 
-.paper:before, .paper:after
-    {
-    	position: absolute;
-    	width: 48%;
-    	height: 10px;
-    	content: ' ';
-    	left: 20px;
-    	bottom: 40px;      
-      -webkit-transform-origin: top right;
-      -moz-transform-origin: top right;
-      -ms-transform-origin: top right;
-      transform-origin: top right;
-      
-    	-webkit-transform: skew(-5deg) rotate(-3deg);
-    	-moz-transform: skew(-5deg) rotate(-3deg);
-    	-ms-transform: skew(-5deg) rotate(-3deg);
-    	-o-transform: skew(-5deg) rotate(-3deg);
-    	transform: skew(-5deg) rotate(-3deg);
-    	-webkit-box-shadow: 0 30px 6px 10px rgba(100, 100, 100, 0.5);
-    	-moz-box-shadow: 0 30px 6px 10px rgba(100, 100, 100, 0.5);
-    	box-shadow: 0 30px 6px 10px rgba(100, 100, 100, 0.5);
-    	z-index: -1;
-    }
-    
-    .paper:after
-    {
-    	left: auto;
-    	right: 20px;
-      -webkit-transform-origin: left top;
-      -moz-transform-origin: left top;
-      -ms-transform-origin: left top;
-      transform-origin: left top;
-    	-webkit-transform: skew(5deg) rotate(3deg);
-    	-moz-transform: skew(5deg) rotate(3deg);
-    	-ms-transform: skew(5deg) rotate(3deg);
-    	-o-transform: skew(5deg) rotate(3deg);
-    	transform: skew(5deg) rotate(3deg);
-    }
+  -webkit-transform: skew(-5deg) rotate(-3deg);
+  -moz-transform: skew(-5deg) rotate(-3deg);
+  -ms-transform: skew(-5deg) rotate(-3deg);
+  -o-transform: skew(-5deg) rotate(-3deg);
+  transform: skew(-5deg) rotate(-3deg);
+  -webkit-box-shadow: 0 30px 6px 10px rgba(100, 100, 100, 0.5);
+  -moz-box-shadow: 0 30px 6px 10px rgba(100, 100, 100, 0.5);
+  box-shadow: 0 30px 6px 10px rgba(100, 100, 100, 0.5);
+  z-index: -1;
+}
+
+.paper:after {
+  left: auto;
+  right: 20px;
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: skew(5deg) rotate(3deg);
+  -moz-transform: skew(5deg) rotate(3deg);
+  -ms-transform: skew(5deg) rotate(3deg);
+  -o-transform: skew(5deg) rotate(3deg);
+  transform: skew(5deg) rotate(3deg);
+}

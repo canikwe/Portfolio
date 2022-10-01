@@ -7,29 +7,25 @@ import projectList from '../data/projectList'
 const ProjectsList = () => {
   const [activeProject, updateActiveProject] = useState(null)
 
-  const toggleProjectDetails = project => {
+  const toggleProjectDetails = (project) => {
     updateActiveProject(project)
   }
 
   return (
     <>
-      <div id='projects-header' className='card'>
+      <div id="projects-header" className="card">
         <Joke />
       </div>
-      <section id='projects-list' className="hero is-primary is-bold is-fullheight">
+      <section id="projects-list" className="hero is-primary is-bold is-fullheight">
         <div className="hero-body">
-          <div className='container'>
-            <h1 className='title'>Projects</h1>
+          <div className="container">
+            <h1 className="title">Projects</h1>
             <div className="columns is-centered is-multiline is-three-quarters-mobile is-two-thirds-tablet is-half-desktop">
-              {projectList.map(p => (
-                <Project key={p.id} project={p} toggleProjectDetails={toggleProjectDetails}/>
+              {projectList.map((p) => (
+                <Project key={p.id} project={p} toggleProjectDetails={toggleProjectDetails} />
               ))}
-
             </div>
-            {
-              activeProject ? <ProjectDetails project={activeProject} closeDetails={toggleProjectDetails}/> : null
-            }
-
+            {activeProject ? <ProjectDetails project={activeProject} closeDetails={toggleProjectDetails} /> : null}
           </div>
         </div>
       </section>
