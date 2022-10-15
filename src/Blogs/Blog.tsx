@@ -1,6 +1,6 @@
 import React from 'react'
 import moment from 'moment'
-import { MediumFeedItem } from '../_types/MediumFeed.type'
+import { MediumFeedItem } from './MediumFeed.type'
 
 interface Props {
   blog: MediumFeedItem

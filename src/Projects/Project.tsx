@@ -1,5 +1,5 @@
 import React from 'react'
-import { Project as ProjectType } from '../_types/Project.type'
+import { Project as ProjectType } from './Project.type'
 
 interface Props {
   project: ProjectType
@@ -12,7 +12,7 @@ const Project = ({ project, toggleProjectDetails }: Props) => {
       <div className="card">
         <div className="card-image">
           <figure className="image is-square">
-            <img src={require(`../images/projects/${project.featureImg}`)} alt={project.title} />
+            <img src={require(`./images/${project.featureImg}`)} alt={project.title} />
           </figure>
         </div>
         <div className="content">

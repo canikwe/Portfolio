@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'nuka-carousel'
-import { Project } from '../_types/Project.type'
+import { Project } from './Project.type'
 
 interface Props {
   project: Project
@@ -15,12 +15,9 @@ const ProjectDetails = ({ project, closeDetails }: Props) => {
         <div className="image">
           <Carousel>
             {project.secondaryImgs.map((i) => {
-              return (
-                <img key={i} className="project-img" src={require(`../images/projects/${i}`)} alt={project.title} />
-              )
+              return <img key={i} className="project-img" src={require(`./images/${i}`)} alt={project.title} />
             })}
           </Carousel>
-          {/* <img className='project-img' src={require(`../images/projects/${project.secondaryImgs[imgIndex]}`)} alt='feature' onClick={handleImgScroll} /> */}
         </div>
         <div className="tile is-ancestor">
           <div className="tile is-vertical is-parent">

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Joke from '../components/Joke'
-import Project from '../components/Project'
-import ProjectDetails from '../components/ProjectDetails'
-import { projectListData } from '../data/ProjectList.data'
-import { Project as ProjectType } from '../_types/Project.type'
+import Joke from '../Jokes/Joke'
+import Project from './Project'
+import ProjectDetails from './ProjectDetails'
+import { projectListData } from './ProjectList.data'
+import { Project as ProjectType } from './Project.type'
 
 const ProjectsList = () => {
   const [activeProject, updateActiveProject] = useState<ProjectType | null>(null)

@@ -1,4 +1,4 @@
-import { Tech } from '../_types/Tech.type'
+import { Tech } from './Tech.type'
 
 export const techListData: Tech[] = [
   { name: 'Javascript', level: 80, img: 'javascript.svg' },

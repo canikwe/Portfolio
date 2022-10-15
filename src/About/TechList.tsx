@@ -1,6 +1,6 @@
 import React from 'react'
-import { techListData } from '../data/TechList.data'
-import Tech from '../components/Tech'
+import { techListData } from './TechList.data'
+import Tech from './Tech'
 
 const TechList = () => {
   const filteredTechList = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tech as TechType } from '../_types/Tech.type'
+import { Tech as TechType } from './Tech.type'
 
 interface Props {
   tech: TechType

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Joke from './Joke'
+import Joke from '../Jokes/Joke'
 
 enum Status {
   LOADING = 'LOADING',

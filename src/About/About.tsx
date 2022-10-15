@@ -1,6 +1,6 @@
 import React from 'react'
 import TechList from './TechList'
-import Bio from '../components/Bio'
+import Bio from './Bio'
 
 const About = () => {
   return (

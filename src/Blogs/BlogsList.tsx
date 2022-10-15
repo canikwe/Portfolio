@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import Blog from '../components/Blog'
-import Joke from '../components/Joke'
-import { MediumFeed, MediumFeedItem } from '../_types/MediumFeed.type'
+import Blog from './Blog'
+import Joke from '../Jokes/Joke'
+import { MediumFeed, MediumFeedItem } from './MediumFeed.type'
 
 const BlogsList = () => {
   const [blogs, updateBlogs] = useState<MediumFeedItem[]>([])
@@ -35,14 +35,6 @@ const BlogsList = () => {
               </div>
               <a href="https://medium.com/@c.anikwe" target="_blank" rel="noopener noreferrer">
                 <button className="button is-outlined is-primary is-pulled-right">
-                  {/* <span class="icon">
-                    <Icon path={mdiChevronDoubleDown}
-                      title="Chevron Down to About Section"
-                      size='3em'
-                      horizontal
-                      color="teal"
-                    />
-                  </span> */}
                   <span>More</span>
                 </button>
               </a>

@@ -56,7 +56,7 @@ html {
 #home {
   @include full-height;
 
-  background: url('../images/home/photo-1497250681960-ef046c08a56e.jpeg');
+  background: url('../Home/images/photo-1497250681960-ef046c08a56e.jpeg');
   background-size: cover;
   display: grid;
   grid-template-columns: 100%;
@@ -163,7 +163,7 @@ section#about {
 }
 
 #projects-header {
-  background: url('../images/projects/ricardo-resende-4eqOc39NCRQ-unsplash (1).jpg');
+  background: url('../Projects/images/ricardo-resende-4eqOc39NCRQ-unsplash (1).jpg');
   @include full-height;
   @include parallax;
   @include center;
@@ -237,7 +237,7 @@ section#about {
 }
 
 #blogs-header {
-  background: url('../images/parallax/retrosupply-jLwVAUtLOAQ-unsplash.jpg');
+  background: url('../Home/images/retrosupply-jLwVAUtLOAQ-unsplash.jpg');
   @include full-height;
   @include parallax;
   @include center;
@@ -252,7 +252,7 @@ section#about {
 }
 
 #contact-header {
-  background: url('../images/parallax/pavan-trikutam-71CjSSB83Wo-unsplash.jpg');
+  background: url('../Home/images/pavan-trikutam-71CjSSB83Wo-unsplash.jpg');
   @include full-height;
   @include parallax;
   @include center;
