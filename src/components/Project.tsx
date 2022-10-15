@@ -1,6 +1,12 @@
 import React from 'react'
+import { Project as ProjectType } from '../_types/Project.type'
 
-const Project = ({ project, toggleProjectDetails }) => {
+interface Props {
+  project: ProjectType
+  toggleProjectDetails: (selectedProject: ProjectType) => void
+}
+
+const Project = ({ project, toggleProjectDetails }: Props) => {
   return (
     <div className="column is-one-quarter" onClick={() => toggleProjectDetails(project)}>
       <div className="card">

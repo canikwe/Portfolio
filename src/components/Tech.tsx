@@ -1,6 +1,11 @@
 import React from 'react'
+import { Tech as TechType } from '../_types/Tech.type'
 
-const Tech = ({ tech: { name, level } }) => {
+interface Props {
+  tech: TechType
+}
+
+const Tech = ({ tech: { name, level } }: Props) => {
   return (
     <div className="tech">
       {name}

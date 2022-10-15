@@ -1,7 +1,17 @@
 import React from 'react'
 import moment from 'moment'
 
-const Blog = ({ blog: { thumbnail, title, pubDate, link, content } }) => {
+interface Props {
+  blog: {
+    title: string
+    thumbnail: string
+    pubDate: string
+    link: string
+    content: string
+  }
+}
+
+const Blog = ({ blog: { thumbnail, title, pubDate, link, content } }: Props) => {
   const convertToText = () => {
     const tag = document.createElement('div')
     tag.innerHTML = content

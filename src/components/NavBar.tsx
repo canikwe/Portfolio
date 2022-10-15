@@ -2,16 +2,16 @@ import React, { useState, useEffect } from 'react'
 
 const NavBar = () => {
   const [navToggle, updateNavToggle] = useState(false)
-  let ss
-  let nav
+  let ss: number
+  let nav: HTMLDivElement
 
   useEffect(() => {
-    window.addEventListener('scroll', myFunction)
-    nav = document.querySelector('.navbar')
+    window.addEventListener('scroll', handleScroll)
+    nav = document.querySelector('.navbar') as HTMLDivElement
     ss = nav.offsetTop
   }, [])
 
-  const myFunction = (e) => {
+  const handleScroll = (e: Event) => {
     if (window.pageYOffset >= ss) {
       nav.classList.add('is-fixed-top')
     } else {

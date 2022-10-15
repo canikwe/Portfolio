@@ -1,31 +1,38 @@
 import React, { useState } from 'react'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Joke from './Joke'
 
+enum Status {
+  LOADING = 'LOADING',
+  SUCCESS = 'SUCCESS',
+  ERROR = 'ERROR',
+}
+
 const Contact = () => {
-  const [status, updateStatus] = useState('')
+  const [status, updateStatus] = useState<Status>()
   const [form, updateForm] = useState({ name: '', email: '', subject: '', message: '' })
 
-  const handleFormUpdate = (e) => updateForm({ ...form, [e.target.name]: e.target.value })
+  const handleFormUpdate = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+    updateForm({ ...form, [e.target.name]: e.target.value })
 
-  const submitForm = (e) => {
+  const submitForm = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    const htmlForm = e.target
+    const htmlForm = e.target as HTMLFormElement
     const data = new FormData(htmlForm)
     const xhr = new XMLHttpRequest()
     xhr.open(htmlForm.method, 'https://formspree.io/mlepdova')
     xhr.setRequestHeader('Accept', 'application/json')
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return
-      if (xhr.status === 200) {
-        updateForm({ name: '', email: '', subject: '', message: '' })
-        updateStatus({ status: 'SUCCESS' })
-      } else {
-        updateStatus({ status: 'ERROR' })
-      }
-    }
+    xhr.onreadystatechange = () => handleRequestResponse(xhr)
     xhr.send(data)
+  }
+
+  const handleRequestResponse = (xhr: XMLHttpRequest) => {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return
+    if (xhr.status === 200) {
+      updateForm({ name: '', email: '', subject: '', message: '' })
+      updateStatus(Status.SUCCESS)
+    } else {
+      updateStatus(Status.ERROR)
+    }
   }
 
   return (
@@ -90,19 +97,19 @@ const Contact = () => {
                       name="message"
                       value={form.message}
                       onChange={handleFormUpdate}
-                      placeholder="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
+                      placeholder=""
                     />
                   </div>
                 </div>
 
-                {status === 'SUCCESS' ? (
+                {status === Status.SUCCESS ? (
                   <p>Thanks!</p>
                 ) : (
                   <div className="control">
                     <button className="button is-link">Submit</button>
                   </div>
                 )}
-                {status === 'ERROR' && <p>Ooops! There was an error.</p>}
+                {status === Status.ERROR && <p>Ooops! There was an error.</p>}
               </form>
             </div>
           </div>

@@ -1,7 +1,13 @@
 import React from 'react'
 import Carousel from 'nuka-carousel'
+import { Project } from '../_types/Project.type'
 
-const ProjectDetails = ({ project, closeDetails }) => {
+interface Props {
+  project: Project
+  closeDetails: (huh: null) => void
+}
+
+const ProjectDetails = ({ project, closeDetails }: Props) => {
   return (
     <div className="modal is-active">
       <div className="modal-background" onClick={() => closeDetails(null)}></div>
