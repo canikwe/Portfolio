@@ -14,11 +14,11 @@ const Joke = () => {
     updateLoading(true)
     fetch('https://icanhazdadjoke.com/', {
       headers: {
-        Accept: 'application/json'
-      }
+        Accept: 'application/json',
+      },
     })
-      .then(res => res.json())
-      .then(joke => {
+      .then((res) => res.json())
+      .then((joke) => {
         setTimeout(() => {
           updateJoke(joke)
           updateLoading(false)
@@ -27,11 +27,10 @@ const Joke = () => {
   }
 
   return (
-    <div className='card paper'>
+    <div className="card paper">
       <div className="card-content">
-        <h1 className='title'>{joke.joke}</h1>
+        <h1 className="title">{joke.joke}</h1>
         <FontAwesomeIcon icon={faSync} spin={loading} onClick={getJoke} color="teal" />
-
       </div>
     </div>
   )

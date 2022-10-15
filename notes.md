@@ -3,6 +3,7 @@
 ## Component Hierarchy
 
 - App
+
   - Home
   - NavBar
   - About
@@ -12,7 +13,7 @@
     - Project...
   - BlogPostsList
     - BlogPost...
-  -Contact
+      -Contact
 
   ## To-Do
 

@@ -1,8 +1,12 @@
 import React from 'react'
 import moment from 'moment'
+import { MediumFeedItem } from './MediumFeed.type'
 
-const Blog = ({blog: {thumbnail, title, pubDate, link, content}}) => {
-  
+interface Props {
+  blog: MediumFeedItem
+}
+
+const Blog = ({ blog: { thumbnail, title, pubDate, link, content } }: Props) => {
   const convertToText = () => {
     const tag = document.createElement('div')
     tag.innerHTML = content
@@ -15,19 +19,17 @@ const Blog = ({blog: {thumbnail, title, pubDate, link, content}}) => {
         <div className="card">
           <div className="card-image">
             <figure className="image is-4by3">
-              <img src={ thumbnail } alt="thumbnail" className='blog-img' />
+              <img src={thumbnail} alt="thumbnail" className="blog-img" />
             </figure>
           </div>
           <div className="card-content">
             <div className="media">
               <div className="media-content">
-                <p className="title is-5">{ title.slice(0, 50) }...</p>
+                <p className="title is-5">{title.slice(0, 50)}...</p>
                 <p className="subtitle is-6">
-                  <time dateTime={pubDate}>{moment(pubDate).format("MMM Do, YYYY")}</time>
+                  <time dateTime={pubDate}>{moment(pubDate).format('MMM Do, YYYY')}</time>
                 </p>
-                <p className='content'>
-                  {convertToText().slice(0, 90)}...
-                </p>
+                <p className="content">{convertToText().slice(0, 90)}...</p>
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@
 @import 'joke';
 
 // Bulma styles
-@import "../../node_modules/bulma/bulma.sass";
+@import '../../node_modules/bulma/bulma.sass';
 
 // Mixins
 @mixin full-height {
@@ -32,7 +32,6 @@
     }
     background-attachment: unset;
   }
-
 }
 
 @mixin center {
@@ -42,8 +41,8 @@
 }
 
 @mixin drop-shadow {
-  -webkit-box-shadow: 0px 0px 12px 5px rgba(27,27,27,0.7); 
-  box-shadow: 0px 0px 12px 5px rgba(27,27,27,0.7);
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(27, 27, 27, 0.7);
+  box-shadow: 0px 0px 12px 5px rgba(27, 27, 27, 0.7);
 }
 
 html {
@@ -56,8 +55,8 @@ html {
 
 #home {
   @include full-height;
-  
-  background: url('../images/home/photo-1497250681960-ef046c08a56e.jpeg');
+
+  background: url('../Home/images/photo-1497250681960-ef046c08a56e.jpeg');
   background-size: cover;
   display: grid;
   grid-template-columns: 100%;
@@ -65,7 +64,7 @@ html {
   justify-items: center;
   font-size: calc(10px + 2vmin);
   color: black;
-  
+
   @include parallax;
   background-attachment: unset;
 
@@ -84,8 +83,8 @@ html {
   svg {
     align-self: flex-end;
     color: pink;
-    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-    filter: drop-shadow( -1px 3px 2px rgba(0, 0, 0, .7));
+    -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(-1px 3px 2px rgba(0, 0, 0, 0.7));
   }
 
   .glow {
@@ -100,10 +99,12 @@ html {
 
   @keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073,
+        0 0 70px #e60073;
     }
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6,
+        0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
   }
 }
@@ -119,10 +120,10 @@ section#about {
 
   line-height: 2em;
 
-  .hero.is-fullheight  {
+  .hero.is-fullheight {
     padding: 5% 10%;
   }
-  
+
   .content {
     display: grid;
     grid-template-columns: 45% 45%;
@@ -133,7 +134,6 @@ section#about {
     @media only screen and (max-width: 650px) {
       grid-template-columns: 100%;
     }
-
   }
 
   #profile {
@@ -144,7 +144,7 @@ section#about {
 
   #tech-list-container {
     width: 100%;
-    
+
     #tech-list {
       display: flex;
       flex-direction: column;
@@ -163,16 +163,15 @@ section#about {
 }
 
 #projects-header {
-  background: url('../images/projects/ricardo-resende-4eqOc39NCRQ-unsplash (1).jpg');
+  background: url('../Projects/images/ricardo-resende-4eqOc39NCRQ-unsplash (1).jpg');
   @include full-height;
   @include parallax;
   @include center;
-
 }
 
 #projects-list {
   @include drop-shadow;
-  
+
   .title.is-5 {
     margin: 0;
   }
@@ -186,9 +185,9 @@ section#about {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: .5s ease;
+    transition: 0.5s ease;
     background-color: rgb(221, 255, 245);
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,7 +201,6 @@ section#about {
   }
 
   .modal-content {
-
     overflow-y: auto;
     overflow-x: hidden;
     width: 70vw;
@@ -213,7 +211,7 @@ section#about {
 
     .image.is-square {
       position: unset;
-      
+
       img {
         width: 100%;
         height: 100%;
@@ -221,7 +219,7 @@ section#about {
       }
     }
     .project-img {
-      width: 100%;  
+      width: 100%;
     }
 
     &.box {
@@ -239,7 +237,7 @@ section#about {
 }
 
 #blogs-header {
-  background: url('../images/parallax/retrosupply-jLwVAUtLOAQ-unsplash.jpg');
+  background: url('../Home/images/retrosupply-jLwVAUtLOAQ-unsplash.jpg');
   @include full-height;
   @include parallax;
   @include center;
@@ -247,14 +245,14 @@ section#about {
 
 #blogs-list {
   @include drop-shadow;
-  
+
   img.blog-img {
     object-fit: fill;
   }
 }
 
 #contact-header {
-  background: url('../images/parallax/pavan-trikutam-71CjSSB83Wo-unsplash.jpg');
+  background: url('../Home/images/pavan-trikutam-71CjSSB83Wo-unsplash.jpg');
   @include full-height;
   @include parallax;
   @include center;
