@@ -6,8 +6,8 @@ const Bio = () => {
       <img id="profile" alt="profile" src={require('../images/about/profile-img.jpg')} />
       <p>
         My name is <strong>Chine Anikwe</strong>, and I'm a Full Stack Web Developer with a passion for using tech to
-        solve problems. Currently working for Flatiron School as a Software Engineering Coach, I get to connect with
-        beginner developers every day and dive into programming fundamentals. Also, I like corny jokes. A lot.
+        solve problems. Currently working for Zimba Technologies as a Founding Software Engineer, I get to deliver
+        scalable, testable solutons for complex business requirements. Also, I like corny jokes. A lot.
       </p>
     </div>
   )

@@ -1,11 +1,11 @@
 import React from 'react'
-import techList from '../data/techList'
+import { techListData } from '../data/TechList.data'
 import Tech from '../components/Tech'
 
 const TechList = () => {
   const filteredTechList = () => {
-    return techList
-      .filter((t) => t.level > 50)
+    return techListData
+      .filter(({ level }) => level > 50)
       .sort((a, b) => {
         const n = b.level - a.level
         if (n !== 0) return n

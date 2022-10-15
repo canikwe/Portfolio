@@ -1,10 +1,7 @@
 export interface Project {
+  id: number
   title: string
   description: string
-  thumbnail: string
-  link: string
-  github: string
-  tech: string[]
   featureImg: string
   secondaryImgs: string[]
   tagLine: string
@@ -12,4 +9,8 @@ export interface Project {
   frontendRepo: string
   backendRepo: string
   tags: string[]
+  github?: string
+  link?: string
+  thumbnail?: string
+  tech?: string[]
 }

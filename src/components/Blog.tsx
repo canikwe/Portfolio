@@ -1,14 +1,9 @@
 import React from 'react'
 import moment from 'moment'
+import { MediumFeedItem } from '../_types/MediumFeed.type'
 
 interface Props {
-  blog: {
-    title: string
-    thumbnail: string
-    pubDate: string
-    link: string
-    content: string
-  }
+  blog: MediumFeedItem
 }
 
 const Blog = ({ blog: { thumbnail, title, pubDate, link, content } }: Props) => {

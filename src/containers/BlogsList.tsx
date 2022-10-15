@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import Blog from '../components/Blog'
 import Joke from '../components/Joke'
+import { MediumFeed, MediumFeedItem } from '../_types/MediumFeed.type'
 
 const BlogsList = () => {
-  const [blogs, updateBlogs] = useState([])
+  const [blogs, updateBlogs] = useState<MediumFeedItem[]>([])
 
   useEffect(() => {
     fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@c.anikwe')
       .then((res) => res.json())
-      .then((data) => {
-        updateBlogs(data.items.filter((b) => b.categories.length))
+      .then(({ items }: MediumFeed) => {
+        updateBlogs(items.filter((item) => item.categories.length))
       })
   }, [])
 

@@ -4,7 +4,7 @@ import { Project } from '../_types/Project.type'
 
 interface Props {
   project: Project
-  closeDetails: (huh: null) => void
+  closeDetails: (project: Project | null) => void
 }
 
 const ProjectDetails = ({ project, closeDetails }: Props) => {
