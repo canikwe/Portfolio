@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSync } from '@fortawesome/free-solid-svg-icons'
 
-const Joke = () => {
+export const Joke = () => {
   const [joke, updateJoke] = useState({ joke: '' })
   const [loading, updateLoading] = useState(false)
 
@@ -35,5 +35,3 @@ const Joke = () => {
     </div>
   )
 }
-
-export default Joke

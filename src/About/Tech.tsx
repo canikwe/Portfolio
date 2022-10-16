@@ -5,7 +5,7 @@ interface Props {
   tech: TechType
 }
 
-const Tech = ({ tech: { name, level } }: Props) => {
+export const Tech = ({ tech: { name, level } }: Props) => {
   return (
     <div className="tech">
       {name}
@@ -13,5 +13,3 @@ const Tech = ({ tech: { name, level } }: Props) => {
     </div>
   )
 }
-
-export default Tech

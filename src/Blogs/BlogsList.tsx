@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import Blog from './Blog'
-import Joke from '../Jokes/Joke'
+import { Blog } from './Blog'
+import { Joke } from '../Jokes/Joke'
 import { MediumFeed, MediumFeedItem } from './MediumFeed.type'
 
-const BlogsList = () => {
+export const BlogsList = () => {
   const [blogs, updateBlogs] = useState<MediumFeedItem[]>([])
 
   useEffect(() => {
@@ -45,5 +45,3 @@ const BlogsList = () => {
     </>
   )
 }
-
-export default BlogsList
