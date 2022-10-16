@@ -7,7 +7,7 @@ interface Props {
   closeDetails: (project: Project | null) => void
 }
 
-const ProjectDetails = ({ project, closeDetails }: Props) => {
+export const ProjectDetails = ({ project, closeDetails }: Props) => {
   return (
     <div className="modal is-active">
       <div className="modal-background" onClick={() => closeDetails(null)}></div>
@@ -52,5 +52,3 @@ const ProjectDetails = ({ project, closeDetails }: Props) => {
     </div>
   )
 }
-
-export default ProjectDetails

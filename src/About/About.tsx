@@ -1,8 +1,8 @@
 import React from 'react'
-import TechList from './TechList'
-import Bio from './Bio'
+import { TechList } from './TechList'
+import { Bio } from './Bio'
 
-const About = () => {
+export const About = () => {
   return (
     <section id="about">
       <section className="hero is-fullheight is-light is-bold">
@@ -19,5 +19,3 @@ const About = () => {
     </section>
   )
 }
-
-export default About

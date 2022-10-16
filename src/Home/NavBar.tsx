@@ -1,28 +1,25 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
-const NavBar = () => {
+export const NavBar = () => {
   const [navToggle, updateNavToggle] = useState(false)
-  let ss: number
-  let nav: HTMLDivElement
+  const nav = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    nav = document.querySelector('.navbar') as HTMLDivElement
-    ss = nav.offsetTop
+    const top = nav.current?.offsetTop
+
+    window.addEventListener('scroll', () => {
+      if (top && window.scrollY >= top) {
+        nav.current?.classList.add('is-fixed-top')
+      } else {
+        nav.current?.classList.remove('is-fixed-top')
+      }
+    })
   }, [])
 
-  const handleScroll = (e: Event) => {
-    if (window.pageYOffset >= ss) {
-      nav.classList.add('is-fixed-top')
-    } else {
-      nav.classList.remove('is-fixed-top')
-    }
-  }
-
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar" role="navigation" aria-label="main navigation" ref={nav}>
       <div className="navbar-brand">
-        <a
+        <span
           role="button"
           className={navToggle ? 'navbar-burger burger is-active' : 'navbar-burger burger'}
           aria-label="menu"
@@ -33,7 +30,7 @@ const NavBar = () => {
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </a>
+        </span>
       </div>
 
       <div className={navToggle ? 'navbar-menu is-active' : 'navbar-menu'}>
@@ -59,5 +56,3 @@ const NavBar = () => {
     </nav>
   )
 }
-
-export default NavBar

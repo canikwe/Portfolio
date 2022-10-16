@@ -6,7 +6,7 @@ interface Props {
   blog: MediumFeedItem
 }
 
-const Blog = ({ blog: { thumbnail, title, pubDate, link, content } }: Props) => {
+export const Blog = ({ blog: { thumbnail, title, pubDate, link, content } }: Props) => {
   const convertToText = () => {
     const tag = document.createElement('div')
     tag.innerHTML = content
@@ -38,5 +38,3 @@ const Blog = ({ blog: { thumbnail, title, pubDate, link, content } }: Props) => 
     </div>
   )
 }
-
-export default Blog

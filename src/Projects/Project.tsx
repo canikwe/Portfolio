@@ -6,7 +6,7 @@ interface Props {
   toggleProjectDetails: (selectedProject: ProjectType) => void
 }
 
-const Project = ({ project, toggleProjectDetails }: Props) => {
+export const Project = ({ project, toggleProjectDetails }: Props) => {
   return (
     <div className="column is-one-quarter" onClick={() => toggleProjectDetails(project)}>
       <div className="card">
@@ -24,5 +24,3 @@ const Project = ({ project, toggleProjectDetails }: Props) => {
     </div>
   )
 }
-
-export default Project

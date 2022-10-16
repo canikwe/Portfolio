@@ -1,8 +1,8 @@
 import React from 'react'
 import { techListData } from './TechList.data'
-import Tech from './Tech'
+import { Tech } from './Tech'
 
-const TechList = () => {
+export const TechList = () => {
   const filteredTechList = () => {
     return techListData
       .filter(({ level }) => level > 50)
@@ -25,5 +25,3 @@ const TechList = () => {
     </div>
   )
 }
-
-export default TechList

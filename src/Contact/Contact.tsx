@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Joke from '../Jokes/Joke'
+import { Joke } from '../Jokes/Joke'
 
 enum Status {
   LOADING = 'LOADING',
@@ -7,7 +7,7 @@ enum Status {
   ERROR = 'ERROR',
 }
 
-const Contact = () => {
+export const Contact = () => {
   const [status, updateStatus] = useState<Status>()
   const [form, updateForm] = useState({ name: '', email: '', subject: '', message: '' })
 
@@ -118,5 +118,3 @@ const Contact = () => {
     </>
   )
 }
-
-export default Contact

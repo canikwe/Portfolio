@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Bio = () => {
+export const Bio = () => {
   return (
     <div id="bio">
       <img id="profile" alt="profile" src={require('./images/profile-img.jpg')} />
@@ -12,5 +12,3 @@ const Bio = () => {
     </div>
   )
 }
-
-export default Bio

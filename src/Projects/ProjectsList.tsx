@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import Joke from '../Jokes/Joke'
-import Project from './Project'
-import ProjectDetails from './ProjectDetails'
+import { Joke } from '../Jokes/Joke'
+import { Project } from './Project'
+import { ProjectDetails } from './ProjectDetails'
 import { projectListData } from './ProjectList.data'
 import { Project as ProjectType } from './Project.type'
 
-const ProjectsList = () => {
+export const ProjectsList = () => {
   const [activeProject, updateActiveProject] = useState<ProjectType | null>(null)
 
   return (
@@ -29,5 +29,3 @@ const ProjectsList = () => {
     </>
   )
 }
-
-export default ProjectsList

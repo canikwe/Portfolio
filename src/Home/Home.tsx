@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 
-const Home = () => {
+export const Home = () => {
   return (
     <div id="home">
       <div>
@@ -17,5 +17,3 @@ const Home = () => {
     </div>
   )
 }
-
-export default Home
