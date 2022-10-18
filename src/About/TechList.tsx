@@ -3,16 +3,13 @@ import { techListData } from './TechList.data'
 import { Tech } from './Tech'
 
 export const TechList = () => {
-  const filteredTechList = () => {
-    return techListData
-      .filter(({ level }) => level > 50)
-      .sort((a, b) => {
-        const n = b.level - a.level
-        if (n !== 0) return n
+  const filteredTechList = () =>
+    techListData.sort((a, b) => {
+      const n = b.level - a.level
+      if (n !== 0) return n
 
-        return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1
-      })
-  }
+      return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1
+    })
 
   return (
     <div id="tech-list-container">
