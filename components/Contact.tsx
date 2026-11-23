@@ -30,7 +30,8 @@ export const Contact = () => {
     <section id="contact" className="contact">
       <div className="container container--narrow">
         <h2 className="section-title section-title--center">Contact Me</h2>
-        <form className="contact__form" onSubmit={onSubmit}>
+        {/* action/method let the form still post to Formspree if JavaScript doesn't load. */}
+        <form className="contact__form" action={contact.formEndpoint} method="POST" onSubmit={onSubmit}>
           <div className="contact__row">
             <label>
               Name

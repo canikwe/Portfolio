@@ -22,6 +22,13 @@ describe('Contact', () => {
     expect(screen.getByLabelText('Message').tagName).toBe('TEXTAREA')
   })
 
+  it('still posts to Formspree if JavaScript does not load', () => {
+    const { container } = render(<Contact />)
+    const form = container.querySelector('form')!
+    expect(form).toHaveAttribute('action', contact.formEndpoint)
+    expect(form).toHaveAttribute('method', 'POST')
+  })
+
   it('posts the form to Formspree as JSON and thanks the sender', async () => {
     const fetchMock = mockFetch({ [contact.formEndpoint]: () => json({ ok: true }) })
     render(<Contact />)

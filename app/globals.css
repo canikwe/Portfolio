@@ -329,6 +329,8 @@ img {
 }
 .contact__row label {
   flex: 1 1 220px;
+  /* Lets the fields shrink below their default width on narrow phones. */
+  min-width: 0;
 }
 .contact__form label {
   display: flex;
@@ -344,7 +346,8 @@ img {
   font-size: 16px;
   padding: 12px 14px;
   border-radius: 10px;
-  border: 1px solid #d5d8de;
+  /* 3.77:1 against white, meeting the 3:1 WCAG minimum for form controls. */
+  border: 1px solid #7b8493;
   background: #fff;
   color: var(--ink);
 }

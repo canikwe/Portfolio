@@ -1,4 +1,5 @@
 import { links, person } from '@/content/site'
+import { CurrentYear } from './CurrentYear'
 
 export const Footer = () => (
   <footer className="footer">
@@ -6,7 +7,7 @@ export const Footer = () => (
       <a href={links.linkedin} target="_blank" rel="noopener noreferrer">
         {person.name}
       </a>{' '}
-      © {new Date().getFullYear()}. Please report any issues{' '}
+      © <CurrentYear buildYear={new Date().getFullYear()} />. Please report any issues{' '}
       <a href={links.issues} target="_blank" rel="noopener noreferrer">
         here
       </a>
