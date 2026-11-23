@@ -1,28 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Portfolio
 
-## Available Scripts
+Source for [chineanikwe.com](https://www.chineanikwe.com). Built with [Next.js](https://nextjs.org) as a static export and deployed to GitHub Pages.
 
-In the project directory, you can run:
+## Requirements
 
-### `npm start`
+Node.js 22 (pinned in `.nvmrc`; run `nvm use` in the project folder).
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Scripts
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### `npm run dev`
+
+Runs the site locally at [http://localhost:3000](http://localhost:3000), reloading as you edit.
+
+### `npm run build`
+
+Builds the static site into the `out` folder.
+
+### `npm run typecheck`
+
+Checks the TypeScript without building.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the Jest and React Testing Library tests in `__tests__/`.
 
 ### `npm run deploy`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the site, then pushes `out` to the `gh-pages` branch, which GitHub Pages serves. The custom domain comes from `public/CNAME`.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Editing content
 
-Application is then pushed to the gh-pahes branch and live
+All copy and settings are in `content/site.ts`, including the switches that show or hide the Projects and Blog sections.
