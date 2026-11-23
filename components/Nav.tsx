@@ -3,6 +3,7 @@ import { features } from '@/content/site'
 const sections = [
   { href: '#top', label: 'Home' },
   { href: '#about', label: 'About' },
+  { href: '#experience', label: 'Experience' },
   { href: '#stack', label: 'Stack' },
   ...(features.showProjects ? [{ href: '#projects', label: 'Projects' }] : []),
   ...(features.showBlog ? [{ href: '#blog', label: 'Blog' }] : []),

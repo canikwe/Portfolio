@@ -2,7 +2,9 @@ import { features } from '@/content/site'
 import { Hero } from '@/components/Hero'
 import { Nav } from '@/components/Nav'
 import { About } from '@/components/About'
+import { Experience } from '@/components/Experience'
 import { Stack } from '@/components/Stack'
+import { CurrentlyWorkingOn } from '@/components/CurrentlyWorkingOn'
 import { Projects } from '@/components/Projects'
 import { Blog } from '@/components/Blog'
 import { Joke } from '@/components/Joke'
@@ -16,13 +18,11 @@ export default function Home() {
       <Nav />
       <main>
         <About />
+        <Experience />
+        <Joke background="umbrellas" />
         <Stack />
-        {features.showProjects && (
-          <>
-            <Joke background="umbrellas" />
-            <Projects />
-          </>
-        )}
+        <CurrentlyWorkingOn />
+        {features.showProjects && <Projects />}
         {features.showBlog && (
           <>
             <Joke background="typewriter" />

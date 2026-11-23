@@ -7,10 +7,10 @@ beforeEach(() => {
   mockFetch({ [JOKE_URL]: () => json({ joke: 'A test joke.' }) })
 })
 
-// Render, then wait for the joke fetch to settle so no state update lands after the test.
+// Render, then wait for both joke fetches to settle so no state update lands after the test.
 const renderHome = async () => {
   render(<Home />)
-  await screen.findByText('A test joke.')
+  expect(await screen.findAllByText('A test joke.')).toHaveLength(2)
 }
 
 describe('home page', () => {
@@ -18,7 +18,7 @@ describe('home page', () => {
     await renderHome()
 
     expect(screen.getByRole('heading', { level: 1, name: `I'm ${person.name}` })).toBeInTheDocument()
-    expect(screen.getByText(`${person.role} at ${person.company}`)).toBeInTheDocument()
+    expect(screen.getByText(person.headline)).toBeInTheDocument()
     expect(screen.getByText('hello!')).toBeInTheDocument()
 
     const hero = document.getElementById('top')!
@@ -68,15 +68,23 @@ describe('home page', () => {
     const hrefs = within(nav)
       .getAllByRole('link')
       .map((a) => a.getAttribute('href'))
-    expect(hrefs).toEqual(['#top', '#about', '#stack', '#contact'])
+    expect(hrefs).toEqual(['#top', '#about', '#experience', '#stack', '#contact'])
     for (const href of hrefs) {
       expect(document.getElementById(href!.slice(1))).not.toBeNull()
     }
   })
 
-  it('shows exactly one joke card while Projects and Blog are hidden', async () => {
+  it('shows two jokes: umbrellas after Experience, payphones before Contact', async () => {
     await renderHome()
-    expect(screen.getAllByRole('complementary', { name: 'Dad joke' })).toHaveLength(1)
+    const jokes = screen.getAllByRole('complementary', { name: 'Dad joke' })
+    expect(jokes).toHaveLength(2)
+
+    const [umbrellas, payphones] = jokes
+    expect(umbrellas).toHaveClass('joke--umbrellas')
+    expect(umbrellas.previousElementSibling).toHaveAttribute('id', 'experience')
+    expect(umbrellas.nextElementSibling).toHaveAttribute('id', 'stack')
+    expect(payphones).toHaveClass('joke--payphones')
+    expect(payphones.nextElementSibling).toHaveAttribute('id', 'contact')
   })
 
   it('shows the current year in the footer', async () => {

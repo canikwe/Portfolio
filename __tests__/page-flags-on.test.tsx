@@ -51,14 +51,16 @@ describe('home page with Projects and Blog turned on', () => {
     const hrefs = within(nav)
       .getAllByRole('link')
       .map((a) => a.getAttribute('href'))
-    expect(hrefs).toEqual(['#top', '#about', '#stack', '#projects', '#blog', '#contact'])
+    expect(hrefs).toEqual(['#top', '#about', '#experience', '#stack', '#projects', '#blog', '#contact'])
 
     await settle()
   })
 
-  it('shows a joke card before each of Projects, Blog and Contact', async () => {
+  it('adds the typewriter joke before Blog, for three jokes in all', async () => {
     render(<Home />)
-    expect(screen.getAllByRole('complementary', { name: 'Dad joke' })).toHaveLength(3)
+    const jokes = screen.getAllByRole('complementary', { name: 'Dad joke' })
+    expect(jokes.map((j) => j.className)).toEqual(['joke joke--umbrellas', 'joke joke--typewriter', 'joke joke--payphones'])
+    expect(jokes[1].nextElementSibling).toHaveAttribute('id', 'blog')
     await settle()
   })
 

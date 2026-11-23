@@ -5,9 +5,7 @@ export const Hero = () => (
   <section id="top" className="hero">
     <p className="hero__hello">hello!</p>
     <h1 className="hero__name">I&apos;m {person.name}</h1>
-    <p className="hero__role">
-      {person.role} at {person.company}
-    </p>
+    <p className="hero__role">{person.headline}</p>
     <div className="hero__links">
       <a href={links.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <GitHubIcon />
